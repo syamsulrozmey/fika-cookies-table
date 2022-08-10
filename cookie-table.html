@@ -1,0 +1,270 @@
+<!-- HTML TABLE -->
+<style>
+    /* ----------------------------- TABLE STYLES ----------------------------- */
+    :root {
+      /* TABLE COLORS */
+      --table-header-font-color: #ffffff;
+      --table-header-bg-color: #3DBF94;
+      --table-header-border-color: #ffffff;
+  
+      --table-cell-font-color: #ffffff;
+      --table-cell-border-color: #d2d2d2;
+  
+      --table-bg-color: #121212;
+      --table-border-color: #ffffff; /* Most Likely won't be seen */
+  
+      /* TABLE DIMENSIONS */
+      --table-header-padding-top-bottom: 12px; /* headers top & bottom padding */
+      --table-header-padding-left-right: 10px; /* headers left & right padding */
+      --table-heading-font-size: 18px;
+  
+      --table-cell-padding-top-bottom: 10px; /* Cells top & bottom padding */
+      --table-cell-padding-left-right: 10px; /* Cells left & right padding */
+      --table-cell-font-size: 14px;
+      --table-cell-min-width: 200px;
+  
+      --table-margin-bottom: 48px;
+    }
+    /* ----------------------------- END OF TABLE STYLES ----------------------------- */
+  
+    /* DON'T NEED TO WORRY ABOUT THESE BELOW!!! */
+    .table-wrap {
+      overflow-x: scroll;
+      width: 100%;
+      margin-bottom: var(--table-margin-bottom);
+    }
+  
+    table,
+    th,
+    td {
+      border-collapse: collapse;
+    }
+  
+    table {
+      width: 100%;
+      border: 1px solid var(--table-border-color);
+      background-color: var(--table-bg-color);
+    }
+  
+    th:last-child {
+      border-left: 1px solid var(--table-header-bg-color);
+      border-top: 1px solid var(--table-header-bg-color);
+      border-right: 1px solid var(--table-header-bg-color);
+      border-bottom: 1px solid var(--table-header-bg-color);
+    }
+  
+    th {
+      text-align: left;
+      color: var(--table-header-font-color);
+      background-color: var(--table-header-bg-color);
+      padding: var(--table-header-padding-top-bottom)
+        var(--table-header-padding-left-right);
+      font-size: 16px;
+      border-left: 1px solid var(--table-header-bg-color);
+      border-top: 1px solid var(--table-header-bg-color);
+      border-right: 1px solid var(--table-header-border-color);
+      border-bottom: 1px solid var(--table-header-bg-color);
+      font-size: var(--table-heading-font-size);
+    }
+  
+    td {
+      color: var(--table-cell-font-color);
+      border: 1px solid var(--table-cell-border-color);
+      padding: var(--table-cell-padding-top-bottom)
+        var(--table-cell-padding-left-right);
+      font-size: var(--table-cell-font-size);
+    }
+  
+    th,
+    td {
+      min-width: var(--table-cell-min-width);
+    }
+  </style>
+  
+  <!-- ****TABLE CONTENT**** -->
+  <div class="table-wrap">
+    <table>
+      <!-- heading Columns -->
+      <tr>
+        <th>Service</th>
+        <th>Description</th>
+      </tr>
+  
+      <!-- Row 1 -->
+      <tr>
+        <td>The Website is hosted on Netlify</td>
+        <td>They are a supplier who is used but the only purpose is that they host the website. Log file hosted by them.</td>
+      </tr>
+  
+      <!-- Row 2 -->
+      <tr>
+        <td>Google Analytics (_ga, _gat, _gid)</td>
+        <td>This is a web analytics service provided by Google Inc which uses cookies to show us how visitors found and explored our site, and how we can enhance their experience. It provides us with information about the behaviour of our visitors (eg how long they stayed on the site, the average number of pages viewed) and also tells us how many visitors we have had.
+  We use CONSENT (gstatic.com) cookies - expires in 9 years.</td>
+      </tr>
+  
+      <!-- Row 3 -->
+      <tr>
+        <td>Google Analytics for Firebase</td>
+        <td>Google Analytics for Firebase uses device identifiers to collect and store information such as number of sessions per user, session duration, operating system, device models, geography, first launches, and app updates.</td>
+      </tr>
+  
+      <!-- Row 4 -->
+      <tr>
+        <td>Google AdSense</td>
+        <td>Google AdSense uses what is called a DoubleClick Cookie. We use this to help us to track the effectiveness of our marketing campaigns. It enables Google to serve our adverts on other sites based on your browsing history on our page and engagement with our adverts.</td>
+      </tr>
+  
+      <!-- Row 5 -->
+      <tr>
+        <td>Google Tag Manager</td>
+        <td>Google Tag Manager allows us to manage and deploy marketing tags (snippets of code or tracking pixels) on our website (or mobile app). These tags enable us to optimise our website experience and marketing campaigns by understanding how users interact with different elements of our website (or mobile app).</td>
+      </tr>
+  
+      <!-- Row 6 -->
+      <tr>
+        <td>SendinBlue</td>
+        <td>We use SendinBlue cookies to store your contact details for our mailing lists and to send marketing emails.
+  
+  This cookie is used when a user subscribes to a newsletter mailing list and expires in 5 years.</td>
+      </tr>
+  
+      <!-- Row 7 -->
+      <tr>
+        <td>Facebook Conversion Tracking Pixel</td>
+        <td>A tracking technology that allows us to follow the actions of users after they are redirected to our website or apps by interacting (viewing or clicking) on an advertisement within Facebook.</td>
+      </tr>
+  
+      <!-- Row 8 -->
+      <tr>
+        <td>Firebase Cloud Messaging</td>
+        <td>The Fika app uses Firebase Cloud Messaging to send messages to its users. To do so, it sends a previously generated anonymous device ID (token) to Google so that we can identify app users and send messages to them. Information on the functionality of Cloud Messaging is available under https://firebase.google.com/products/cloud-messaging/</td>
+      </tr>
+  
+      <!-- Row 9 -->
+      <tr>
+        <td>Firebase Authentication</td>
+        <td>Firebase Authentication allows us to authenticate users to the Fika app. Every time a user signs in, the user credentials are sent to the Firebase Authentication backend and exchanged for a Firebase ID token (a JWT) and refresh token. Firebase ID tokens are short lived and last for an hour; the refresh token can be used to retrieve new ID tokens.</td>
+      </tr>
+  
+      <!-- Row 10 -->
+      <tr>
+        <td>Firebase Cloud Firestore</td>
+        <td>Firebase Cloud Firestore is a hosting and backend service provided by Google Inc. Personal Data: Usage Data; various types of Data as specified in the privacy policy of the service.</td>
+      </tr>
+  
+      <!-- Row 11 -->
+      <tr>
+        <td>Firebase Cloud Messaging</td>
+        <td>Sends messages to users including push notifications</td>
+      </tr>
+  
+      <!-- Row 12 -->
+      <tr>
+        <td>Firebase Crash Reporting	</td>
+        <td>Crash Reporting creates detailed reports of the errors in the Fika app. We use the platform to track app crashes as they occur and prevent future ones. Errors are grouped into issues based on having similar stack traces, and triaged by the severity of impact on users. We do not collect any personally identifiable information (such as names, email addresses, or phone numbers) with Crash Reporting.</td>
+      </tr>
+  
+      <!-- Row 13 -->
+      <tr>
+        <td>Firebase A/B Testing (Remote Config)</td>
+        <td>Firebase Remote Config is an A/B testing and configuration service provided by Google Inc. Personal Data collected: various types of Data as specified in the privacy policy of the service.</td>
+      </tr>
+  
+      <!-- Row 14 -->
+      <tr>
+        <td>__hs_opt_out</td>
+        <td>This cookie is used by the <a href="https://knowledge.hubspot.com/articles/kcs_article/reports/customize-your-cookie-tracking-settings-and-privacy-policy-alert">opt-in privacy policy</a> to remember not to ask the visitor to accept cookies again. This cookie is set when you give visitors the choice to opt out of cookies. It contains the string "yes" or "no". It expires in 13 months.</td>
+      </tr>
+  
+      <!-- Row 15 -->
+      <tr>
+        <td>__hs_do_not_track</td>
+        <td>This cookie can be set to prevent the tracking code from sending any information to HubSpot. It contains the string "yes". It expires in 13 months.</td>
+      </tr>
+  
+      <!-- Row 16 -->
+      <tr>
+        <td>__hs_initial_opt_in</td>
+        <td>This cookie is used to prevent the banner from always displaying when visitors are browsing in strict mode. It contains the string "yes" or "no". It expires in seven days.</td>
+      </tr>
+  
+      <!-- Row 17 -->
+      <tr>
+        <td>__hs_cookie_cat_pref</td>
+        <td>This cookie is used to record the categories a visitor consented to. It contains data on the consented categories. It expires in 13 months.</td>
+      </tr>
+  
+      <!-- Row 18 -->
+      <tr>
+        <td>hs_ab_test</td>
+        <td>This cookie is used to consistently serve visitors the same version of an <a href="https://knowledge.hubspot.com/landing-page-user-guide-v2/how-do-i-a/b-test-my-pages"> A/B test page</a> they’ve seen before. It contains the id of the A/B test page and the id of the variation that was chosen for the visitor. It expires at the end of the session.</td>
+      </tr>
+  
+      <!-- Row 19 -->
+      <tr>
+        <td><id>_key</td>
+        <td>When visiting a password-protected page, this cookie is set so future visits to the page from the same browser do not require login again. The cookie name is unique for each password-protected page. It contains an encrypted version of the password so future visits to the page will not require the password again. It expires in 14 days.</td>
+      </tr>
+  
+      <!-- Row 20 -->
+      <tr>
+        <td>hs-messages-is-open</td>
+        <td>This cookie is used to determine and save whether the chat widget is open for future visits. It is set in your visitor's browser when they start a new chat, and resets to re-close the widget after 30 minutes of inactivity. If your visitor manually closes the chat widget, it will prevent the widget from re-opening on subsequent page loads in that browser session for 30 minutes. It contains a boolean value of True if present. It expires in 30 minutes.</td>
+      </tr>
+  
+      <!-- Row 21 -->
+      <tr>
+        <td>hs-messages-hide-welcome-message</td>
+        <td>This cookie is used to prevent the chat widget welcome message from appearing again for one day after it is dismissed. It contains a boolean value of True or False. It expires in one day.</td>
+      </tr>
+  
+      <!-- Row 22 -->
+      <tr>
+        <td>__hsmem</td>
+        <td>This cookie is set when visitors log in to a HubSpot-hosted site. It contains encrypted data that identifies the <a href="https://knowledge.hubspot.com/cms-pages-editor/control-audience-access-to-pages">membership user </a>when they are currently logged in. It expires in one year.</td>
+      </tr>
+  
+      <!-- Row 23 -->
+      <tr>
+        <td>hs-membership-csrf</td>
+        <td>This cookie is used to ensure that <a href="https://knowledge.hubspot.com/cms-pages-editor/control-audience-access-to-pages">content membership logins</a> cannot be forged. It contains a random string of letters and numbers used to verify that a membership login is authentic. It expires at the end of the session.</td>
+      </tr>
+  
+      <!-- Row 24 -->
+      <tr>
+        <td>hs_langswitcher_choice</td>
+        <td>This cookie is used to save the visitor’s selected language choice when viewing <a href="https://knowledge.hubspot.com/cos-general/how-to-manage-multi-language-content-with-hubspots-cos">pages in multiple languages</a>. It gets set when an end user selects a language from the language switcher and is used as a language preference to redirect them to sites in their chosen language in the future, if they are available. It contains a colon delimited string with the ISO639 language code choice on the left and the top level private domain it applies to on the right. An example will be "EN-US:hubspot.com". It expires in two years.</td>
+      </tr>
+  
+      <!-- Row 25 -->
+      <tr>
+        <td>__cfruid</td>
+        <td>This cookie is set by HubSpot’s CDN provider because of their <a href="https://community.cloudflare.com/t/what-does-cfruid-cookie-do/65510">rate limiting policies</a>. Learn more about <a href="https://support.cloudflare.com/hc/en-us/articles/200170156-Understanding-the-Cloudflare-Cookies">Cloudflare cookies</a>. It expires at the end of the session.</td>
+      </tr>
+  
+      <!-- Row 26 -->
+      <tr>
+        <td>__hstc</td>
+        <td>The main cookie for tracking visitors. It contains the domain, utk, initial timestamp (first visit), last timestamp (last visit), current timestamp (this visit), and session number (increments for each subsequent session). It expires in 13 months.</td>
+      </tr>
+  
+      <!-- Row 27 -->
+      <tr>
+        <td>hubspotutk</td>
+        <td>This cookie keeps track of a visitor's identity. It is passed to HubSpot on form submission and used when deduplicating contacts. It contains an opaque GUID to represent the current visitor. It expires in 13 months.</td>
+      </tr>
+  
+      <!-- Row 28 -->
+      <tr>
+        <td>__hssc</td>
+        <td>This cookie keeps track of sessions. This is used to determine if HubSpot should increment the session number and timestamps in the __hstc cookie. It contains the domain, viewCount (increments each pageView in a session), and session start timestamp. It expires in 30 minutes.</td>
+      </tr>
+  
+      <!-- Row 29 -->
+      <tr>
+        <td>__hssrc</td>
+        <td>Whenever HubSpot changes the session cookie, this cookie is also set to determine if the visitor has restarted their browser. If this cookie does not exist when HubSpot manages cookies, it is considered a new session. It contains the value "1" when present. It expires at the end of the session.</td>
+      </tr>
+    </table>
+  </div>
